@@ -1,7 +1,8 @@
-<html>
+<html lang="it">
   <head>
     <title>Grand Caffe</title>
 
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,8 +22,8 @@
     <meta property="og:title" content="Gabriel Semeniuc" />
     <meta property="og:description" content="Sito web  Grand Caffe" />
   </head>
-  
-    <header>
+    <body>
+     <header>
       <div class="menu">
         <div>
           <li><a href="index.html"> Home </a></li>
@@ -37,43 +38,42 @@
             <div class="item2">
               <img src="img/logo/logo.png" id="logo" />
           </div>
-          
-        </ul>
       </div>
-      <div id="navbar">
-        <br>
-        <p1 class="testo1">Scopri il gusto del Caffe</p1>
-        <br>
-        <div class="testo2">
-        <p3 >
-          Benvenuti a Grand Caffe, la caffetteria perfetta per iniziare la tua giornata con un sorriso!<br>
-           Siamo orgogliosi di offrire  una vasta selezione
-          di caffè  di alta qualità<br><br>
-
-          Preparati con le migliori miscele di chicchi di caffè tostati al momento. <br>
-          Ma non è solo il caffè che ci rende unici! <br><br>
-          Abbiamo anche una vasta selezione di dolci fatti in casa <br> dalle crostate alle torte 
-          che saranno sicuramente una tentazione per il tuo palato. <br><br> Inoltre, abbiamo una selezione di snack salati, come tramezzini e panini <br>
-          Il nostro ambiente accogliente e confortevole è perfetto per incontrarsi con amici <br> o semplicemente per prenderti un momento per te stesso.<br><br> E se sei di fretta, puoi sempre ordinare il tuo caffè per asporto!<br>
-
-          Siamo aperti tutti i giorni dalle 7:00 alle 19:00<br><br> Vieni a trovarci e scopri perché Grand Caffe <br> è diventato il posto preferito per molti dei nostri affezionati clienti.<br><br> Ti aspettiamo! 
-           </p3> 
+      
+     </header>
+     <hr/>
+     <div class="main-container">
+     <div style="margin-top: 30px; margin-bottom: 70px;">
+    
+        <h1>Registrati per prenotare </h1>
+        <form action="insert.php" method="POST">
+          
+            
+            <label for="nome">Nome utente:</label>
+            <input type="text" id="nome" name="nome" maxlength="20" pattern="[a-zA-Z]"required>
         
-          <img src="img/barman.jpeg" id="barman" />
-        
-    </header>
-    <hr>
-    <body>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve contenere almeno un numero e una lettera maiuscola e minuscola e almeno 8 o più caratteri"><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="^\+39\d{2,3}\d{7,8}$" required>
+          
+            <label for="messaggio">Richieste speciali per la prenotazione </label>
+            <textarea id="messaggio" name="messaggio" maxlength="255"   required></textarea>
+          
+            <input type="submit" value="Invia">
+          
+          </form>
+      </div>
 
-   
-    <video autoplay width="1900" height="800"  controls>
-      <source src="media/cinematic caffe.mp4" type="video/mp4">
-    </video>
-   
- 
-  </body>
+
+     </body>
+  </div>
   <!--end of the body -->
- <hr>
+    <hr/>
   <!--end of the body -->
   <footer>
     <div id="footer">
