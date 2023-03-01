@@ -1,18 +1,59 @@
-html {
-    overflow-x: hidden;
-    }
-
-:root{
-    --medium:50px;
+*{
+    margin: 0;
+    padding: 0;
     
 }
 
-footer{
-    background-color: #382922;
-    padding: 0;
-    color:aliceblue;
+:root{
+    --medium:50px;
+
 }
 
+.flex-container{
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    
+
+
+}
+#flex-prodotto{
+    padding: 5px;
+    margin: 0px;
+    width: 450px;
+    height: 300px;
+    
+    
+
+
+}
+
+ 
+footer{
+    background-color: #382922;
+    color:aliceblue; 
+    width: 1900px;
+    height: 350px;
+    
+    
+}
+
+body {
+    position: absolute;
+    text-align: center;
+    height: 2000px;
+
+}
+
+
+form input {
+    
+    margin-bottom: 10px;
+}
 
 
 #lente {
@@ -30,25 +71,34 @@ footer{
     
 
 }
-
-#menu ul{
+.main-container{
+    height: 550px;
+    display: flex;
+    
+}
+.menu{
+    margin-left: -1000px;
+    
+}
+.menu ul{
     list-style-type:none;
     margin-top: 30;
-    margin-left: 120px;
     padding: 0;
+    
 
 
 }
 
-#menu li a{
+.menu li a{
     text-decoration: none;
     color: #382922;
     font-size: 30px;
 }
 
-#menu li{
+.menu li{
     display: inline-block;
     padding: 40px;
+    
     
     
 }
@@ -57,17 +107,19 @@ footer{
 #logo{
     width: 150px;
     height: 150px;
-    margin-top: -120px;
+    
+    
     
 
 }
 
 #barman{
-    margin-left: 985px;
+    margin-left: 880px;
     margin-top: -616px;
     width: 900px;
     height: 700px;
-    position: absolute;
+    position: relative;
+
     
 }
 
@@ -83,8 +135,8 @@ footer{
 #footer{
     
     font-size: var(--medium);
-    margin-left: 600px;
     font-style: italic;
+    
     
     
     
@@ -94,7 +146,7 @@ footer{
 #twitter{
     width: 80px;
     height: 80px;
-    margin-left: 300px;
+    
 }
 
 #facebook{
@@ -105,15 +157,16 @@ footer{
 
 .testo1{
     
-    margin-left: 190px;
+    margin-left: 100px;
     
     color:aliceblue;
     
     font-size: var(--medium);
     font-style: italic;
+
 }
 
-.testo3{
+.testo2{
     font-size: 20px;
     padding-left: 110px;
     margin-top: 80px;
@@ -123,17 +176,64 @@ footer{
 
 
 .item1{
-    margin-left: 1650px;
+    margin-left: 2600px;
     margin-top: -70px;
 }
 
 .item2{
-    margin-left: -870px;
+    margin-left: 1200px;
+    margin-top: -80px;
+   
+}
+
+.item3{
+    margin-top: 50px;
+}
+
+#prodotto1{
+    position: relative;
+    left: 10em;
+    height: 250px;
+    width: 180px;
+    
+}
+#prodotto2{
+    position: relative;
+    left: 50em;
+    height: 200px;
+    width: 300px;
+}
+#prodotto3{
+    height: 300px;
+    width: 300px;
+}
+#prodotto4{
+    height: 400px;
+    width: 400px;
+}
+#prodotto5{
+    height: 400px;
+    width: 300px;
+}
+#prodotto6{
+    height: 300px;
+    width: 300px;
+}
+
+#riga1{
+    margin-left: -1000px;
     
 }
 
-.item4{
-    margin-top: 50px;
+#riga2{
+    margin-left: -1000px;
+
+}
+#riga3{
+    margin-right: -1000px;
+
+}
+@media only screen and (max-width: 475px) {
     
 }
 
